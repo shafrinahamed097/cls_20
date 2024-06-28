@@ -28,7 +28,8 @@ Route::get('/dashboard',[DashboardController::class, 'dashboard']);
 // Generate Dynamic Route
 
 Route::get("/article/{articleId}",[articleController::class,'index']);
-Route::get("/article/page/{pageNumber}",[articleController::class,'showArticles']);
+// Route::get("/article/page/{pageNumber}",[articleController::class,'showArticles']);
+Route::get("/article/page/{pageNumber}/display/{type}",[articleController::class,'showArticles']);
 
 
 

@@ -10,10 +10,15 @@ class articleController extends Controller
         return 'Article ID = '.$articleId ;
     }
 
-    function showArticles($pageNumber){
-        return 'Page Number: ' .$pageNumber;
+    // function showArticles($pageNumber){
+    //     return 'Page Number: ' .$pageNumber;
+    // }
+
+    function showArticles($pageNumber, $type){
+        return 'Page Number: ' .$pageNumber."type: ".$type;
     }
 }
+
 
 
 
