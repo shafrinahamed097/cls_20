@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\WelcomeController;
 use App\Http\Controllers\DashboardController;
+use App\Http\Controllers\articleController;
 
 Route::get('/', function () {
     return view('welcome');
@@ -23,6 +24,10 @@ Route::get('/hello/from/ostad', function(){
 Route::get("/hello", [WelcomeController::class, 'sayhello']);
 Route::get('/course', [WelcomeController::class, 'courseName']);
 Route::get('/dashboard',[DashboardController::class, 'dashboard']);
+
+// Generate Dynamic Route
+
+Route::get("/article/{articleId}",[articleController::class,'index']);
 
 
 
