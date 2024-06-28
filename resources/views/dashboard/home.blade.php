@@ -9,8 +9,8 @@
     <h1>Welcome to Dashboard</h1>
     <h2>Version 1.1</h2>
     <hr>
-   <p>Name={{$name}}</p>
-   <p>Email= {{$email}}</p>
+   <p>Name: {{$name}}</p>
+   <p>Email: {{$email}}</p>
 
 </body>
 </html>

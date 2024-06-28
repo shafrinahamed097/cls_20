@@ -13,7 +13,9 @@ class DashboardController extends Controller
          $name = "John Doe";
          $email = "john@email.com";
          
-        return view('dashboard.home',['name'=> $name, 'email'=> $email]);
+        // return view('dashboard.home',['name'=> $name, 'email'=> $email]);
+
+        return view('dashboard.home', compact('name', 'email'));
        
     }
 
